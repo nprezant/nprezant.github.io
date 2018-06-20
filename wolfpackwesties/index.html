@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<link rel="shortcut icon" href="swingDanceIcon.png"/>
+	<link rel="stylesheet" href="styles.css"/>
+	<script src="navigationscripts.js"></script>
+	<script src="photosscripts.js"></script>
+</head>
+<body>
+
+<!--BEGIN MAIN BODY-->
+<div class="container">
+
+	<!--HEADER-->
+	<header class="box header">Wolfpack Westies</header>
+	
+	<!--NAVIGATION-->
+	<nav class="box nav">
+		<ul class="navigation">
+			<li><a id="nav-home" class="nav-el nav-current" onclick="hideshow('home')" href="JavaScript:void(0)">Home</a></li>
+			<li><a id="nav-events" class="nav-el" onclick="hideshow('events')" href="JavaScript:void(0)">Events</a></li>
+			<li><a id="nav-photos" class="nav-el" onclick="hideshow('photos')" href="JavaScript:void(0)">Photos</a></li>
+			<li><a id="nav-about" class="nav-el" onclick="hideshow('about')" href="JavaScript:void(0)">About</a></li>
+		</ul>
+	</nav>
+	
+	<!--MAIN CONTENT-->
+	<section class="box content">
+	
+	<!--HOME TAB-->
+		<div class="content-items in-from-right" id="home">
+			<div class="sub-cont content-a">
+				<p>We are NC State's West Coast Swing community! We welcome everyone to join us! Right now we are on summer vacation.</p>
+				
+				<p>Lessons and classes will resume in the Fall, but for now people are still meeting to go out to Ego's on Tuesdays and Loafers on Fridays! Email us (wolfpackwesties@ncsu.edu) and we'll add you to our GroupMe.</p>
+				
+				<ul>
+					<li>There is beginner friendly WCS every Tuesday night **Link**</li>
+					<li>Blues every Friday at the Lindy Lab **Link**</li>
+					<li>West Coast Swing every Friday at Loafers **Link**</li>
+				</ul>
+			</div>
+			<div class="sub-cont content-b">
+				<img class="sub-cont-img" src="WESTIES3C.jpg" alt="there should be a picture of our sketch logo here"/>
+				<p style="text-align:right">Logo courtesy of the one and only Caleb Thomas</p>
+			</div>
+		</div>
+		
+		<!--EVENTS TAB-->
+		<div class="content-items in-from-right hide" id="events">
+			<div class="full-cont">
+				<p style="text-align:center">Need to link this calendar to the wolfpack westies google calendar</p>
+				<iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%23125A12&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+			</div>
+		</div>
+		
+		<!--PHOTOS TAB-->
+		<div class="content-items in-from-right hide" id="photos">
+			<div class="full-cont">
+				<div class="cont-header" id="cont-header-photos" style="text-align:center">
+					<h1>Adventure Highlights</h1>
+                    <p>All of our photos can be found on google photos **link**</p>
+					<p>Click on the buttons to change the grid view.</p>
+					<button class="btn" onclick="one()">1</button>
+					<button class="btn active" onclick="two()">2</button>
+					<button class="btn" onclick="four()">4</button>
+					
+					<!-- Photo Grid -->
+					<div class="row"> 
+						<div class="column">
+							<img src="test1.jpg" style="width:100%">
+							<img src="WESTIES3C.jpg" style="width:100%">
+							<img src="westies2.png" style="width:100%">
+							<img src="Hunt-Sunset-HD-1500x530.jpg" style="width:100%">
+							<img src="test1.jpg" style="width:100%">
+							<img src="test1.jpg" style="width:100%">
+							<img src="test1.jpg" style="width:100%">
+						</div>
+						<div class="column">
+							<img src="test1.jpg" style="width:100%">
+							<img src="test1.jpg" style="width:100%">
+							<img src="test1.jpg" style="width:100%">
+							<img src="test1.jpg" style="width:100%">
+							<img src="test1.jpg" style="width:100%">
+							<img src="test1.jpg" style="width:100%">
+							<img src="test1.jpg" style="width:100%">
+						</div>  
+						<div class="column">
+							<img src="test1.jpg" style="width:100%">
+							<img src="test1.jpg" style="width:100%">
+							<img src="test1.jpg" style="width:100%">
+							<img src="test1.jpg" style="width:100%">
+							<img src="test1.jpg" style="width:100%">
+							<img src="test1.jpg" style="width:100%">
+							<img src="test1.jpg" style="width:100%">
+						</div>
+						<div class="column">
+							<img src="test1.jpg" style="width:100%">
+							<img src="test1.jpg" style="width:100%">
+							<img src="test1.jpg" style="width:100%">
+							<img src="test1.jpg" style="width:100%">
+							<img src="test1.jpg" style="width:100%">
+							<img src="test1.jpg" style="width:100%">
+							<img src="test1.jpg" style="width:100%">
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+		
+		<!--ABOUT TAB-->
+		<div class="content-items in-from-right hide" id="about">
+			<div class="sub-cont content-a">
+				<p>This can be about the swing club and how it was founded, what we try to do, maybe a mission statement. I can link the constitution, and the student organization page, and the facebook page.</p>
+			</div>
+			<div class="sub-cont content-b">
+				<p>Who knows what'll go here. Maybe pictures of the officer. Mention Kay's stuff about consent somewhere.s</p>
+			</div>
+		</div>
+	</section>
+	<footer class="box footer">web design by Noah Prezant</footer>
+</div>
+
+</body>
+</html>
