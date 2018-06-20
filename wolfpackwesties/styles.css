@@ -231,9 +231,12 @@ body {
     border: none;
     outline: none;
     padding: 10px 16px;
-    /*background-color: #f1f1f1;*/
+    background-color: inherit;
+    color: inherit;
+    font:inherit;
     cursor: pointer;
     font-size: 18px;
+    background-color: rgba(0, 0, 0, .1);
 }
 
 .btn:hover {
