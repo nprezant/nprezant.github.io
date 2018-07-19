@@ -1,9 +1,13 @@
+/* styles.css */
+
+
+/* general css */
 * {
     box-sizing: border-box;
 }
 html {
 	height:100%;
-	background-image:url("Hunt-Sunset-HD-1500x530.jpg");
+	background-image:url("images/Hunt-Sunset-HD-1500x530-red-tint.jpg");
   	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -11,7 +15,7 @@ html {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color:#918585;
-	overflow: auto;
+	overflow: hidden;
 }
 
 /* dark theme test */
@@ -247,3 +251,40 @@ body {
     background-color:rgba(0, 0, 0, 0.2);
 }
 /* end for the photo page ----------------------------------------------------------------------*/ 
+
+/* for the leadership bios  ----------------------------------------------------------------------*/ 
+.flex-container-bios {
+    display:flex;
+    background-color:#f1f1f1;
+    flex-wrap:wrap;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.flex-container-bios > div {
+    background-color:#808ca0;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.flex-container-bios > div > div {
+    background-color: DodgerBlue;
+    color: inherit;
+    margin: 10px;
+    text-align: left;
+    min-height: 75px; /*this is an issue -- maybe should just do straight "height"*/
+    display:flex;
+}
+.bio-headshot {
+    flex:0 0 100px;
+    justify-content: center;
+    align-items: center;
+}
+.bio-description {
+     flex:1 0 150px;
+     align-items:center;
+}
+.bio-headshot > img {
+    width:100%;
+}
+/* end the leadership bios  ----------------------------------------------------------------------*/ 
