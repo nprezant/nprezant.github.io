@@ -288,3 +288,14 @@ body {
     width:100%;
 }
 /* end the leadership bios  ----------------------------------------------------------------------*/ 
+
+/* start the general text  ----------------------------------------------------------------------*/ 
+.header-text {
+    font-weight:bold;
+    text-decoration:underline;
+    text-underline-position: under;
+}
+.link-text {
+    color:lightsteelblue;
+    text-underline-position: under;
+/* end the general text  ----------------------------------------------------------------------*/ 
