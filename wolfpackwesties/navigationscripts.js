@@ -9,4 +9,5 @@
     	}
     	document.getElementById(show).classList.remove('hide');
     	document.getElementById('nav-'+show).classList.add('nav-current');
+        sessionStorage.LastActiveTab = show;
     }

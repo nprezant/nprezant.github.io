@@ -7,8 +7,23 @@
 	<link rel="stylesheet" href="styles.css"/>
 	<script src="navigationscripts.js"></script>
 	<script src="photosscripts.js"></script>
+    <script>
+    function GoToSessionTab() {
+        if(typeof(Storage) !== "undefined") {
+            if (sessionStorage.LastActiveTab) {
+                //console.log(sessionStorage.LastActiveTab);
+            } else {
+                sessionStorage.LastActiveTab = "home";
+            }
+            console.log(sessionStorage.LastActiveTab);
+            hideshow(sessionStorage.LastActiveTab);
+        } else {
+            console.log("Sorry, your browser does not support web storage...");
+        }
+    }
+    </script>
 </head>
-<body>
+<body onload="GoToSessionTab()">
 
 <!--BEGIN MAIN BODY-->
 <div class="container">
