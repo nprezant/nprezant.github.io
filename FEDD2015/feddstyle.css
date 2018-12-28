@@ -1,0 +1,239 @@
+* {
+	// background-color: #ffffff;
+	// margin: 30px;
+}
+
+/* for the navigation bar */
+
+#nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 1em 0;
+	padding: 0;
+	list-style: none;
+	list-style-type: none;
+	background-color: #cccccc;
+	border-bottom: 1px solid #ccc;
+}
+
+#nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#nav li {
+	float:left;
+	font-family: Sans Serif;
+	font-size: 1.5em;
+}
+
+#nav li a{
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #cc0000;
+	border-right: 1px solid #ccc;
+}
+
+#nav li a:hover {
+	color: #c00;
+	background-color: #fff;
+}
+
+/* for the title */
+
+#title {
+	width:100%;
+	float: left;
+	margin: 0 0 3em 0;
+	padding: 0;
+	list-style: none;
+	background-color: #cc0000;
+	color: #ffffff;
+	border-bottom: 1px solid #ccc;
+}
+
+#title ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#title li {
+	display: inline-block;
+	padding: 8px 15px;
+	text-decoration: none;
+}
+
+#title h1 {
+	font-family: Helvetica;
+	font-size: 2em;
+}
+
+#title h3 {
+	font-family: Helvetica;
+	font-size: 1em;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+
+/* for the requirements page! */
+
+#requirementimage {
+	margin: 3em 0 0 0;
+	padding: 3em 0 0 0;
+}
+
+/* this is for the photos page! */
+	
+.img {
+	margin:5px;
+	padding:5px;
+	border: 1px solid #0000ff;
+	height: auto;
+	width: auto;
+	float: left;
+	text-align: center;
+}
+
+.img img {
+	float:left;
+	height:25em;
+	width: 25em;
+	border: 1px solid white;
+	margin: 0 1% 1% 0;
+}
+
+.img a:hover img {
+	border: 1px solid #333333;
+}
+
+/* some other stuff for the legit photos page */
+
+ul.img-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+ul.img-list li {
+	display: inline-block;
+	height: 25em;
+	width: 25em;
+	margin: 0 1em 1 em 0;
+	position: relative;
+}
+
+span.text-content {
+	background: rgba(0,0,0,0.6);
+	color: white;
+	cursor: pointer;
+	display: table;
+	height: 25em;
+	left:0;
+	position: absolute;
+	top:0;
+	width: 25em;
+	opacity: 0;
+}
+
+span.text-content span {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 28px;
+}
+
+ul.img-list li:hover span.text-content {
+	opacity: 1;
+}
+
+img.photo2 {
+	height: 25em;
+	width:25em;
+}
+
+/* end other stuff */
+
+.desc {
+	text-align: center;
+	font-weight: normal;
+	width: 180px;
+	margin:5px;
+	border: 1px solid blue;
+}
+
+
+
+.imgWrap {
+	position: relative;
+	height: 25em;
+	width: imgWidth(img2);
+}
+
+.imgDescription {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(29,106,154,0.72);
+	color: #fff;
+	
+	visibility: hidden;
+	opacity: 0;
+	
+	
+	-webkit-transition: visibility opacity 0.2s;
+	
+}
+	
+.imgWrap:hover .imgDescription {
+	visibility: visible;
+	opacity: 1;
+}
+
+p.photo-text {
+	font-size: 1.5em;
+	text-align: center;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+ /* team photo */
+ 
+.team-photo img {
+	width: 60%;
+	margin: 0 20% 0 20%;
+}
+
+.team-photo p {
+	text-align: center;
+	font-size: 1.5em;
+}
+
+/* here is for the index */
+
+.index-block {
+	display: inline-block;
+	height: 35em;
+	width:32em;
+	margin: 0 2em 2em 0;
+	vertical-align: top;
+}
+	
+p.index-links {
+	font-size: 28px;
+}
+	
+	

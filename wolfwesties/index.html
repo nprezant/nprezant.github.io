@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+    <title>Wolfpack Westies</title>
+	<link rel="shortcut icon" href="images/swingDanceIcon.png"/>
+	<link rel="stylesheet" href="styles.css"/>
+	<script src="navigationscripts.js"></script>
+	<script src="photosscripts.js"></script>
+    <script>
+    function GoToSessionTab() {
+        if(typeof(Storage) !== "undefined") {
+            if (sessionStorage.LastActiveTab) {
+                //console.log(sessionStorage.LastActiveTab);
+            } else {
+                sessionStorage.LastActiveTab = "home";
+            }
+            console.log(sessionStorage.LastActiveTab);
+            hideshow(sessionStorage.LastActiveTab);
+        } else {
+            console.log("Sorry, your browser does not support web storage...");
+        }
+    }
+    </script>
+</head>
+<body onload="GoToSessionTab()">
+
+<!--BEGIN MAIN BODY-->
+<div class="container">
+
+	<!--HEADER-->
+	<header class="box header">Wolfpack Westies</header>
+	
+	<!--NAVIGATION-->
+	<nav class="box nav">
+		<ul class="navigation">
+			<li><a id="nav-home" class="nav-el nav-current" onclick="hideshow('home')" href="JavaScript:void(0)">Home</a></li>
+			<li><a id="nav-events" class="nav-el" onclick="hideshow('events')" href="JavaScript:void(0)">Events</a></li>
+			<li><a id="nav-photos" class="nav-el" onclick="hideshow('photos')" href="JavaScript:void(0)">Photos</a></li>
+			<li><a id="nav-about" class="nav-el" onclick="hideshow('about')" href="JavaScript:void(0)">About</a></li>
+		</ul>
+	</nav>
+	
+	<!--MAIN CONTENT-->
+	<section class="box content">
+	
+	<!--HOME TAB-->
+		<div class="content-items in-from-right" id="home">
+			<div class="sub-cont content-a">
+				<p>
+                <span class="header-text">Welcome to our page! We're glad you're here.</span>
+                </br></br>
+                We are the West Coast Swing Club at NC State! We welcome everyone (of all skill levels) to join us for free lessons and dances one night a week in the Carmichael Rec Center.
+                </br></br>
+                Place: Carmichael Rec Center, 2nd Floor, Studio C</br>
+                Time: Tuesdays 9:00-11:00pm</br>
+                Attire: Comfortable clothing
+                </p>
+				
+                <p class="header-text"><br>Other places to dance:</p>
+				<ul>
+					<li><a href="https://www.facebook.com/events/2038949719703999/" class="link-text">Tuesday, beginner friendly WCS, Ego Entertainment</a></li>
+					<li><a href="https://www.facebook.com/groups/RDUblues/" class="link-text">Friday, Blues, Lindy Lab</a></li>
+					<li><a href="http://www.loafersbeachclub.com/" class="link-text">Friday, WCS, Loafers (Discount with NCSU Westie Club Membership)</a></li>
+				</ul>
+			</div>
+			<div class="sub-cont content-b">
+				<img class="sub-cont-img" src="images/WESTIES3C.jpg" alt="there should be a picture of our sketch logo here"/>
+				<p style="text-align:right">Logo courtesy of the one and only Caleb Thomas</p>
+			</div>
+		</div>
+		
+		<!--EVENTS TAB-->
+		<div class="content-items in-from-right hide" id="events">
+			<div class="full-cont" style="min-width:815px;">
+				<p style="text-align:center">Wolfpack Westie Google Calender</p>
+                <!--<iframe src="https://calendar.google.com/calendar/b/4/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=wolfwesties%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>-->
+                <iframe src="https://calendar.google.com/calendar/b/4/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=6m6aa253o7m9ca2hla9rekp0p0%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+			</div>
+		</div>
+		
+		<!--PHOTOS TAB-->
+		<div class="content-items in-from-right hide" id="photos">
+			<div class="full-cont">
+				<div class="cont-header" id="cont-header-photos" style="text-align:center">
+					<h1>Adventure Highlights</h1>
+                    <!--<p>All of our photos can be found on google photos **link**</p>-->
+					<p>Click the buttons to change how photos are displayed.</p>
+					<button class="btn" onclick="one()">1</button>
+					<button class="btn active" onclick="two()">2</button>
+					<button class="btn" onclick="four()">4</button>
+					
+					<!-- Photo Grid -->
+					<div class="row"> 
+						<div class="column">
+							<img src="images/test1.jpg" style="width:100%">
+							<img src="images/WESTIES3C.jpg" style="width:100%">
+							<img src="images/westies2.png" style="width:100%">
+							<img src="images/Hunt-Sunset-HD-1500x530.jpg" style="width:100%">
+                            <img src="images/test1.jpg" style="width:100%">
+                            <img src="images/Hunt-Sunset-HD-1500x530.jpg" style="width:100%">
+						</div>
+						<div class="column">
+							<img src="images/WESTIES3C.jpg" style="width:100%">
+							<img src="images/westies2.png" style="width:100%">
+							<img src="images/Hunt-Sunset-HD-1500x530.jpg" style="width:100%">
+                            <img src="images/WESTIES3C.jpg" style="width:100%">
+							<img src="images/Hunt-Sunset-HD-1500x530.jpg" style="width:100%">
+							<img src="images/test1.jpg" style="width:100%">
+						</div>  
+						<div class="column">
+							<img src="images/Hunt-Sunset-HD-1500x530.jpg" style="width:100%">
+                            <img src="images/WESTIES3C.jpg" style="width:100%">
+							<img src="images/westies2.png" style="width:100%">
+							<img src="images/Hunt-Sunset-HD-1500x530.jpg" style="width:100%">
+							<img src="images/test1.jpg" style="width:100%">
+                            <img src="images/westies2.png" style="width:100%">
+						</div>
+						<div class="column">
+							 <img src="images/WESTIES3C.jpg" style="width:100%">
+							<img src="images/westies2.png" style="width:100%">
+							<img src="images/Hunt-Sunset-HD-1500x530.jpg" style="width:100%">
+							<img src="images/test1.jpg" style="width:100%">
+                            <img src="images/westies2.png" style="width:100%">
+                            <img src="images/Hunt-Sunset-HD-1500x530.jpg" style="width:100%">
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+		
+		<!--ABOUT TAB-->
+		<div class="content-items in-from-right hide" id="about">
+			<div class="full-cont">
+				<!--<p>This can be about the swing club and how it was founded, what we try to do, maybe a mission statement. I can link the</p>
+                <ul>
+                    <li><a href="documents\NCSU_West_Coast_Swing_Constitution.pdf">constitution</a></li>
+                    <li><a href="https://getinvolved.ncsu.edu/organization/westcoastswingclub">student organization page</a></li>
+                    <li><a href="https://www.facebook.com/NCSUwestcoastswingclub/">facebook page</a></li>
+                </ul>-->
+                
+                <!--Biographies-->
+                <div class="flex-container-bios">
+                    <div>
+                        <div class="bio-headshot"><img src="images/headshot-noah4.png"/></div>
+                        <div class="bio-description"><p>Noah Prezant, President, likes nalgenes</p></div>
+                    </div>
+                    <div>
+                        <div class="bio-headshot"><img src="images/headshot-caleb2.png"/></div>
+                        <div class="bio-description">Caleb Thomas, VP, likes lasers</div>
+                   </div>
+                   <div>
+                        <div class="bio-headshot"><img src="images/headshot-emily2.png"/></div>
+                        <div class="bio-description">Emily Molina, Secretary, likes fast cars</div>
+                   </div>
+                   <div>
+                        <div class="bio-headshot"><img src="images/headshot-sam2.png"/></div>
+                        <div class="bio-description">Sam, Treasurer, likes good times</div>
+                   </div>
+                </div>
+			</div>
+		</div>
+	</section>
+    
+    
+	<footer class="box footer">web design by <span style="font-style: italic;">np</span></footer>
+</div>
+
+</body>
+</html>

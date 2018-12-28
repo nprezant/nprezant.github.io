@@ -1,0 +1,301 @@
+/* styles.css */
+
+
+/* general css */
+* {
+    box-sizing: border-box;
+}
+html {
+	height:100%;
+	background-image:url("images/Hunt-Sunset-HD-1500x530-red-tint.jpg");
+  	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color:#918585;
+	overflow: hidden;
+}
+
+/* dark theme test */
+html {
+	background-color:#FFFFFF;
+}
+/* end dark theme test */
+
+
+body {
+    color: #dfdfdf;
+    font-family: serif, sans-serif;
+    height:98%;
+    overflow:auto;
+}
+
+/* general grid */
+.box {
+	padding:.5em;
+	margin:.5em;
+	background-color:rgba(0, 0, 0, 0.4);
+	min-width: 300px;
+}
+.header,
+.content,
+.nav,
+.footer {
+	margin-left:0;
+	margin-right:0;
+}
+.header {
+ 	grid-area: header;
+ 	font-size:3em;
+}
+.content {
+	grid-area: content;
+	background-color:rgba(0, 0, 0, 0);
+	padding:0;
+}
+
+.nav {
+  	grid-area: nav;
+  	padding:0;
+}
+.footer {
+  	grid-area: footer;
+  	text-align:right;
+  	margin-top:2em;
+}
+.container {
+	display: grid;
+	grid-template-columns: 10% 1fr 1fr 10%;
+	grid-template-rows: auto auto 1fr auto;
+	grid-template-areas: 
+	". header header ."
+	". nav nav ."
+	". content content ."
+	". footer footer .";
+	height:95%;
+}
+
+/* navigation flexbox */
+.navigation {
+	list-style: none;
+	margin: 0; 
+	padding: 0;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	justify-content:flex-end; /*large screen*/
+ }
+ .navigation li {
+ 	display:list-item;
+ 	flex:.1;
+ 	text-align:center;
+ }
+.navigation a {
+	text-decoration: none;
+	color:inherit;
+ 	display: block;
+  	padding: 1em;
+  	padding-top:1.5em;
+ 	padding-bottom:1.5em;
+
+	cursor: pointer;
+	-webkit-transition-duration: .2s;
+	-o-transition-duration: .2s;
+	transition-duration: .2s;
+
+	-webkit-transition:.5s;
+	-o-transition:.5s;
+	transition: .5s;
+}
+.nav-current {
+	background-color:rgba(0, 0, 0, 0.2)
+}
+.navigation a:hover {
+  background-color: rgba(0, 0, 0, .4);
+}
+
+/* section content-items flexbox */
+.content-items {
+	margin:0;
+	padding:0;
+
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	justify-content: space-between;
+
+	vertical-align: top;
+}
+.sub-cont {
+	flex:.49;
+}
+.full-cont {
+		flex:1;
+}
+.content-items .sub-cont,
+.content-items .full-cont{
+	padding:.5em;
+	background-color:rgba(0,0,0,.4);
+	margin-top:1em;
+} 	
+.box,
+.sub-cont,
+.full-cont{
+	border-radius:.2em;
+}
+.sub-cont,
+.full-cont{
+	min-width:15em;
+}
+.sub-cont-img {
+	max-width:-webkit-fill-available;
+	max-width:100%;
+}
+
+/* resizing */
+@media all and (max-width: 60em) {
+  .navigation {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+  .navigation li {
+  	flex: 1;
+  }
+}
+@media all and (max-width: 40em) {
+  .navigation, .content-items {
+    /* use columns on small screens */
+    flex-direction: column;
+  }
+  .navigation li {
+  	flex: 1;
+  }
+}
+
+/* for the hiding and showing */
+.hide {display:none;}
+
+/* for the animated transitions */
+.in-from-right {
+  -webkit-animation: anim 3.5s 1;
+  animation: anim 3.5s 1;
+}
+@-webkit-keyframes anim {
+  0% {transform: translateX(8%);}
+  14.28% {transform: translateX(0);}
+  85.71% {transform: translateX(0);}
+}
+@keyframes anim {
+  0% {transform: translateX(8%);}
+  14.28% {transform: translateX(0);}
+  85.71% {transform: translateX(0);}
+}
+
+
+/* for the iframe */
+.content-items iframe {
+	margin:auto;
+	display:block;
+}
+
+/* for the photo page ----------------------------------------------------------------------*/ 
+.row {
+    display: -ms-flexbox; /* IE 10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE 10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: inherit;
+    color: inherit;
+    font:inherit;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.btn:hover {
+      background-color: rgba(0, 0, 0, .4);
+}
+
+.btn.active {
+    background-color:rgba(0, 0, 0, 0.2);
+}
+/* end for the photo page ----------------------------------------------------------------------*/ 
+
+/* for the leadership bios  ----------------------------------------------------------------------*/ 
+.flex-container-bios {
+    display:flex;
+    background-color:rgb(0,0,0,0); /*debug: #f1f1f1; */
+    flex-wrap:wrap;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.flex-container-bios > div {
+    background-color:rgb(0,0,0,0); /*debug: #808ca0; */
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.flex-container-bios > div > div {
+    background-color: rgb(0,0,0,0); /*debug: DodgerBlue; */
+    color: inherit;
+    margin: 10px;
+    text-align: left;
+    min-height: 75px; /*this is an issue -- maybe should just do straight "height"*/
+    display:flex;
+}
+.bio-headshot {
+    flex:0 0 100px;
+    justify-content: center;
+    align-items: center;
+}
+.bio-description {
+     flex:1 0 150px;
+     align-items:center;
+}
+.bio-headshot > img {
+    width:100%;
+}
+/* end the leadership bios  ----------------------------------------------------------------------*/ 
+
+/* start the general text  ----------------------------------------------------------------------*/ 
+.header-text {
+    font-weight:bold;
+    text-decoration:underline;
+    text-underline-position: under;
+}
+.link-text {
+    color:lightsteelblue;
+    text-underline-position: under;
+/* end the general text  ----------------------------------------------------------------------*/ 

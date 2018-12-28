@@ -1,0 +1,19 @@
+<!doctype>
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js">    </script>
+    </head>
+	
+    <body>
+        <script>
+            $.ajax("https://docs.google.com/spreadsheet/pub?key=1Ss8ZX1WPXyaVAX7PGTHdUJ0gAy81_prF8l69q2gDPl0&single=true&gid=0&range=a1&output=csv").done(function(result){
+                alert(result);
+				document.write('this');
+            });
+			document.write(that);
+        </script>
+		
+		<script src="https://docs.google.com/spreadsheet/pub?key=1Ss8ZX1WPXyaVAX7PGTHdUJ0gAy81_prF8l69q2gDPl0&single=true&gid=0&output=txt&range=a1"></script>
+		<p>making sure</p>
+    </body>
+</html>

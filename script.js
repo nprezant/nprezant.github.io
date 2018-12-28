@@ -1,0 +1,1 @@
+/*window.location.assign("https://nprezant.github.io/wolfpackwesties/");*/
