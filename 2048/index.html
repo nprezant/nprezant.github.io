@@ -4,9 +4,9 @@
 
     <title>2048</title>
     
-    <script src="script.js"></script>
+    <script src="2048.js"></script>
     
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="2048.css">
     
 </head>
 
@@ -18,52 +18,46 @@
     </div>
     
     
-    <div class="header">
-        <button onclick="left()">left</button>
-        <button onclick="right()">right</button>
+    <div class="controller">
+        <button class="btn-up" onclick="up()">up</button>
+        <button class="btn-left" onclick="left()">&lt &lt left</button>
+        <button class="btn-right" onclick="right()">right &gt &gt </button>
+        <button class="btn-down" onclick="down()">down</button>
     </div>
     
-    
-    <div class="cells">
-        
-        <div class="row">
-            <div class="col">
-                <div class="cell">2</div>
-                <div class="cell">2</div>
-                <div class="cell">4</div>
-                <div class="cell">4</div>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col">
-                <div class="cell">2</div>
-                <div class="cell">2</div>
-                <div class="cell">2</div>
-                <div class="cell">2</div>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col">
-                <div class="cell">8</div>
-                <div class="cell">4</div>
-                <div class="cell">4</div>
+    <div class="board">
+        <div class="grid">
+            
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
                 <div class="cell"></div>
             </div>
-        </div>
-        
-        <div class="row">
-            <div class="col">
-                <div class="cell">32</div>
-                <div class="cell">16</div>
-                <div class="cell">8</div>
-                <div class="cell">8</div>
+            
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
             </div>
+            
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            
         </div>
-        
     </div>
-    
     
 </body>
 </html>
