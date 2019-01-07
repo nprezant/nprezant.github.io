@@ -4,25 +4,33 @@
 
     <title>2048</title>
     
-    <script src="2048.js"></script>
+    <script src="game.js"></script>
+    <script src="random_player.js"></script>
+    <script src="ai_turn_manager.js"></script>
+    <script src="ai_player.js"></script>
     
     <link rel="stylesheet" type="text/css" href="2048.css">
     
 </head>
 
 <body>
-
+<div class="container">
     
     <div class="header">
         <p>This page contains a 2048 game. There might be some AI. There might be some user interaction.</p>
+        <p id="counter">0</p>
     </div>
     
     
     <div class="controller">
+        <button class="btn-left" onclick="left()">left</button>
         <button class="btn-up" onclick="up()">up</button>
-        <button class="btn-left" onclick="left()">&lt &lt left</button>
-        <button class="btn-right" onclick="right()">right &gt &gt </button>
+        <button class="btn-right" onclick="right()">right</button>
         <button class="btn-down" onclick="down()">down</button>
+        <button class="btn-down" onclick="reset()">RESET</button>
+        <button class="btn-down" onclick="run_random_player()">Random Player</button>
+        <button class="btn-down" onclick="run_ai_player()">AI Player</button>
+        <button class="btn-down" onclick="train_ai_player()">Train AI</button>
     </div>
     
     <div class="board">
@@ -59,5 +67,6 @@
         </div>
     </div>
     
+</div>
 </body>
 </html>
