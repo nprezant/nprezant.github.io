@@ -29,9 +29,10 @@ function AIPlayer() {
         command_name();
     };
     
-    AIPlayer.prototype.play_game = function () {
+    AIPlayer.prototype.play_game = async function () {
         while (!this.game.game_over) {
             this.take_turn();
+            await new Promise((resolve, reject) => setTimeout(resolve, 250))
         };
     };
     
@@ -86,6 +87,6 @@ function run_ai_player() {
 
 function train_ai_player() {
     var ai = new AIPlayer();
-    ai.nudge();
+    /*ai.nudge();*/
     ai.train();
 }

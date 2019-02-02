@@ -29,7 +29,7 @@ function RandomPlayer() {
 }
 
 
-async function run_random_player() {
+function run_random_player() {
     var ai = new RandomPlayer();
     ai.play_game();
 }
