@@ -1,3 +1,3 @@
 A misc. website
 
-View at [https://nprezant.github.io/](nprezant.github.io)
+View at [nprezant.github.io/](https://nprezant.github.io)
