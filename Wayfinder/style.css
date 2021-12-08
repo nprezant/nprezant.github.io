@@ -1,0 +1,47 @@
+
+body {
+    background-color: #EFEFEF;
+}
+
+.nav {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0px 60px 0px;
+    display: block;
+    font: bold 12px Avenir, Helvetica, Geneva, sans-serif;
+    text-transform: uppercase;
+}
+
+.content {
+    width: 950px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    overflow: hidden;
+}
+
+h1 {
+    color: #6699cc;
+    margin-bottom: 40px;
+    font: 18px bold Avenir, sans-serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #000;
+    margin-top: 30px;
+    margin-bottom: 8px;
+    font: 16px Avenir, sans-serif, bold;
+    text-transform: uppercase;
+}
+
+p {
+    font: 14px Avenir, sans-serif;
+}
+
+p.modification-stamp {
+    margin-top: 40px;
+    font: 10px Avenir, sans-serif;
+}
