@@ -3,6 +3,10 @@ body {
     background-color: #EFEFEF;
 }
 
+#title {
+    font: 36px Avenir, Helvetica, Geneva, sans-serif;
+}
+
 .nav {
     max-width: 900px;
     min-width: 300px;
@@ -43,7 +47,7 @@ p {
     font: 14px Avenir, sans-serif;
 }
 
-p.modification-stamp {
+.modification-stamp {
     margin-top: 40px;
     font: 10px Avenir, sans-serif;
 }
