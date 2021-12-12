@@ -1,21 +1,17 @@
-
 body {
     background-color: #EFEFEF;
+    font-family: Avenir, sans-serif;
 }
 
-#title {
-    font: 36px Avenir, Helvetica, Geneva, sans-serif;
+h1 {
+    font-size: 36px;
+    font-family: Avenir, Helvetica, Geneva, sans-serif;
+    font-weight: normal;
 }
 
-.nav {
-    max-width: 900px;
-    min-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 0px 60px 0px;
-    display: block;
-    font: bold 12px Avenir, Helvetica, Geneva, sans-serif;
-    text-transform: uppercase;
+h2 {
+    font-size: 24px;
+    font-weight: normal;
 }
 
 .content {
@@ -28,26 +24,38 @@ body {
     overflow: hidden;
 }
 
-h1 {
-    color: #6699cc;
-    margin-bottom: 40px;
-    font: 18px bold Avenir, sans-serif;
+.modification-stamp {
+    margin-top: 40px;
+    font-size: 10px;
+}
+
+.nav {
+    max-width: 900px;
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0px 60px 0px;
+    display: block;
+    font-size: 12px;
     text-transform: uppercase;
 }
 
-h2 {
+.privacy h1 {
+    color: #6699cc;
+    margin-bottom: 40px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.privacy h2 {
     color: #000;
     margin-top: 30px;
     margin-bottom: 8px;
-    font: 16px Avenir, sans-serif, bold;
+    font-size: 16px;
+    font-weight: normal;
     text-transform: uppercase;
 }
 
-p {
-    font: 14px Avenir, sans-serif;
-}
-
-.modification-stamp {
-    margin-top: 40px;
-    font: 10px Avenir, sans-serif;
+.privacy p {
+    font-size: 14px;
 }
