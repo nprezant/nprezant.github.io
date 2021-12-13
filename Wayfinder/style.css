@@ -24,6 +24,30 @@ h2 {
     overflow: hidden;
 }
 
+.flexible {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#tagbar {
+    padding: 2em 0 2em 0;
+}
+
+#title {
+    flex-grow: 1;
+    margin: 0;
+}
+
+#tagline {
+    text-align: end;
+    align-self: end;
+    color: #6699cc;
+}
+
+.appicon {
+    border-radius: 15px;
+}
+
 .modification-stamp {
     margin-top: 40px;
     font-size: 10px;
