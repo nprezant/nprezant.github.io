@@ -1,0 +1,86 @@
+body {
+    background-color: #EFEFEF;
+    font-family: Avenir, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: Avenir, Helvetica, Geneva, sans-serif;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.content {
+    max-width: 950px;
+    min-width: 300px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    overflow: hidden;
+}
+
+.flexible {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#tagbar {
+    padding: 2em 0 2em 0;
+}
+
+#title {
+    flex-grow: 1;
+    margin: 0;
+}
+
+#tagline {
+    text-align: end;
+    align-self: end;
+    color: #6699cc;
+}
+
+.appicon {
+    border-radius: 15px;
+    width: 20%;
+}
+
+.modification-stamp {
+    margin-top: 40px;
+    font-size: 10px;
+}
+
+.nav {
+    max-width: 900px;
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0px 60px 0px;
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.privacy h1 {
+    color: #6699cc;
+    margin-bottom: 40px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.privacy h2 {
+    color: #000;
+    margin-top: 30px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.privacy p {
+    font-size: 14px;
+}
